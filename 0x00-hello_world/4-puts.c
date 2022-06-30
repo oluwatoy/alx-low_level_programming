@@ -1,8 +1,6 @@
-#include <studio.h>
-
-/**
- * main - Entry point
- * 
+#include <stdio.h>
+/
+ * main - Entry point 
  * Return: always 0 (success)
  */
 
