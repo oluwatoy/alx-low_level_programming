@@ -1,45 +1,28 @@
 #include "main.h"
 
+	
 
+	/**
+	 *
+	 * 	 * _isalpha - checks if it is an alphabet
+	 *
+	 * 	 	 * @c: The character (parameter) to be checked
+	 *
+	 * 	 	 	 * Return: 1 if c is letter, returns 0 otherwise
+	 *
+	 * 	 	 	 	 */
 
-/**
- *
- *  * print_alphabet_x10 - prints alphabet 10 times
- *
- *   * No parameter needed
- *
- *    * Return: void
- *
- *     */
+	int _isalpha(int c)
 
-void print_alphabet_x10(void)
+		{
 
-{
+					if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
 
-		int i;
+									return (1);
 
-			char c;
+							else
 
+											return (0);
 
+								}
 
-				for (i = 1; i <= 10; i++)
-
-						{
-
-									for (c = 'a'; c <= 'z'; c++)
-
-												{
-
-																_putchar(c);
-
-																		}
-
-											_putchar('\n');
-
-												}
-
-}
-
-Footer
-
-© 2022 GitHub, Inc.
