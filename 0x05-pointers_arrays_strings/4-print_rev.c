@@ -3,29 +3,20 @@
 /**
  * print_rev - prints a string in reverse followed by a new line
  * @s: string to printed in reverse
+ *
+ * Return: no return
  */
-
 void print_rev(char *s)
 {
-	int len = 0;
+	int c = 0;
 	int i;
 
-	/* iterate to find length of string and point to last character */
-	while (*s != '\0')
+	while (s[c] != '\0')
 	{
-		len++;
-		++s;
+		c++;
 	}
 
-	/* go back to character before null character */
-	s--;
-
-	/* print string reversed */
-	for (i = len; i >= 0; i--)
-	{
-		_putchar(*s);
-		s--;
-	}
-
+	for (i = c - 1; i >= 0; i--)
+		_putchar(s[i]);
 	_putchar('\n');
 }
