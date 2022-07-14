@@ -1,45 +1,24 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
- *
- *  * jack_bauer - main thing
- *
- *   *
- *
- *    */
-
+ * jack_bauer - prints every minute of jack bauer day
+ * no need for parameter
+ * Return: does not return anything
+ */
 void jack_bauer(void)
-
 {
+	int h, m;
 
-		int i;
-
-			int j;
-
-
-
-				for (i = 0; i <= 23; i++)
-
-						{
-
-									for (j = 0; j <= 59; j++)
-
-												{
-
-																_putchar(i / 10 + '0');
-
-																			_putchar(i % 10 + '0');
-
-																						_putchar(':');
-
-																									_putchar(j / 10 + '0');
-
-																												_putchar(j % 10 + '0');
-
-																															_putchar('\n');
-
-																																	}
-
-										}
-
+	for (h = 0; h < 24; h++)
+	{
+		for (m = 0; m < 60; m++)
+		{
+			_putchar('0' + (h / 10));
+			_putchar('0' + (h % 10));
+			_putchar(':');
+			_putchar('0' + (m / 10));
+			_putchar('0' + (m % 10));
+			_putchar('\n');
+		}
+	}
 }
