@@ -22,8 +22,8 @@ int main(int argc, char *argv[])
 	{
 		if ((argv[1][i] < '0' || argv[1][i] > '9') && !(argv[1][i] == '-' && i == 0))
 		{
-				puts("Error");
-				return (1);
+			puts("Error");
+			return (1);
 		}
 	}
 	cents = atoi(argv[1]);
