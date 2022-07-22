@@ -34,9 +34,9 @@ int main(int argc, char *argv[])
 	}
 	while (cents > 0)
 	{
-	        for (i = 0; i < 5; i++)
+		for (i = 0; i < 5; i++)
 		{
-		        if (cents - coins[i] >= 0)
+			if (cents - coins[i] >= 0)
 			{
 				cents -= coins[i];
 				count++;
