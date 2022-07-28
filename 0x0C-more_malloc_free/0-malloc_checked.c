@@ -7,19 +7,10 @@
  */
 void *malloc_checked(unsigned int b)
 {
-	unsigned int i;
-	char *p;
+	void *p = malloc(b);
 
-	if (b == 0)
-		return (NULL);
-	p = malloc(b * size of (char));
 	if (p == NULL)
-	{
-	       return (NULL)
-	}
-	for (i = 0; i < b; i++)
-	{
-		p[i] = b;
-	}
+		exit (98);
 	return (p);
-}	
+
+}
