@@ -1,6 +1,6 @@
 #include <stddef.h>
 #include <string.h>
-#include "3-cal.h"
+#include "3-calc.h"
 
 /**
  * get_op_func - selects a function to the corresponding operator
