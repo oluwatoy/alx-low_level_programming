@@ -52,6 +52,7 @@ int op_div(int a, int b)
  * @b: int to mod a by
  * Return: remainder of a and b
  */
+int op_mod(int a, int b)
 {
-	int op_mod(int a, int b)
+	return (a % b);
 }
